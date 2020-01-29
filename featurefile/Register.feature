@@ -2,7 +2,7 @@ Feature: Register
 Scenario: Register on TestMe App
 		Given user open TestMeApp
 		When user click on signup
-		And enter username as "Ankita12345"
+		And enter username as "Ankita123456"
 		And enter first name as "Ankita"
 		And enter last name as "Kumbhar"
 		And enter password as "Ankita1234"
@@ -37,6 +37,19 @@ Scenario: product search
 		|Head|
 	And  click on find button
 	Then click on add to cart button
+
 		
-		
+@casestudy4
+@data-driven
+Scenario: search product and add to cart
+		Given user open TestMeApp
+	When user click signin
+	And user enter credentials as
+		|Ankita12345|
+		|Ankita1234|
+	And seach product
+		|Head|
+	And  click on find button
+	Then click on add to cart button
+			
 		
