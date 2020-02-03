@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 				features="featurefile"
-				,glue= {"stepDefination"},tags="@searchproduct",plugin= {"pretty","json:target/cucumber.json"}
+				,glue= {"stepDefination"},tags="@login",plugin= {"pretty","json:target/cucumber.json"}
 			
 			)
 	
