@@ -25,6 +25,7 @@ public class RegisterTest {
 		driver.get("http:10.232.237.143:443/TestMeApp/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("in login");
 
 	}
 	@When("^user click signin$")
