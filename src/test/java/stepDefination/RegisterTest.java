@@ -15,6 +15,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class RegisterTest {
+	
 	public static WebDriver driver;
 
 	@Given("^user open TestMeApp$")
@@ -98,7 +99,7 @@ public class RegisterTest {
 			driver.findElement(By.xpath("//input[@value='Female']")).click();
 		}
 	}
-
+    
 	@And("^enter email as \"([^\"]*)\"$")
 	public void userenteremail(String mail) {
 		driver.findElement(By.name("emailAddress")).sendKeys(mail);
